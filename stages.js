@@ -2,7 +2,7 @@ const stages_data = {
   "stage-01": {
       "name": "\u00c9tape 1",
       "date": "2024-07-19T08:45:00+0200",
-      "finish": "2024-07-19T14:30:00+0200",
+      "finish": "2024-07-19T14:45:00+0200",
       "location": "Bagn\u00e8res-de-Bigorre to Saint-Lary Pla d\u2019Adet",
       "distance": 124.5523693412807,
       "up": 3638.0,
@@ -12,7 +12,7 @@ const stages_data = {
   "stage-02": {
       "name": "\u00c9tape 2",
       "date": "2024-07-20T08:30:00+0200",
-      "finish": "2024-07-20T14:26:00+0200",
+      "finish": "2024-07-20T15:30:00+0200",
       "location": "Saint-Lary Soulan to Barrage Cap de Long",
       "distance": 108.1309899928584,
       "up": 4749.0,
@@ -22,7 +22,7 @@ const stages_data = {
   "stage-03": {
       "name": "\u00c9tape 3",
       "date": "2024-07-21T08:30:00+0200",
-      "finish": "2024-07-09T12:30:00+0200",
+      "finish": "2024-07-09T13:00:00+0200",
       "location": "Saint-Lary Soulan to Tourmalet",
       "distance": 81.11315430474438,
       "up": 2717.0,
