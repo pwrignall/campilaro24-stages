@@ -1,0 +1,197 @@
+:root {
+    font-size: 22px;
+    --card-bg-color: hsl(10, 15%, 95%);
+    --bg-color: hsl(10, 15%, 100%);
+    --accent-color: rgb(212, 57, 30);
+    --fg-color: hsl(0, 0%, 5%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    background-color: var(--bg-color);
+    color: var(--fg-color);
+}
+
+
+
+.distance::after {
+    content: ' km';
+}
+
+.type[data-type="individual-time-trial"]::before {
+    content: '⏱️ ';
+}
+
+.type[data-type="flat"]::before {
+    content: '🚴‍♀️ ';
+}
+
+.type[data-type="hilly"]::before {
+    content: '🚵‍♀️ ';
+}
+
+.type[data-type="lumpy"]::before {
+    content: '🐫 ';
+}
+
+.type[data-type="mountain"]::before {
+    content: '⛰️ ';
+}
+
+
+.up::before {
+    content: '\2191 ';
+    font-size: 0.6rem;
+}
+
+.down::before {
+    content: '\2193 ';
+    font-size: 0.6rem;
+}
+
+.up::after,
+.down::after {
+    content: ' m';
+}
+
+.eta::before {
+    content: '🏁 ≈';
+    font-size: 0.5rem;
+}
+
+path.profile-line {
+    fill: none;
+    stroke: var(--fg-color);
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+path.profile-area {
+    fill: var(--accent-color);
+}
+
+#stages {
+    padding: 0 1rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    justify-items: stretch;
+}
+
+.stage {
+    background-color: var(--card-bg-color);
+    padding: 0.2rem 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    border-bottom: 2px solid var(--accent-color);
+    font-size: 0.6rem;
+    background-color: var(--bg-color);
+    padding: 0.2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.4rem;
+}
+
+h1 {
+    font-family: "Satisfy", cursive;
+    font-size: 1.2rem;
+    color: var(--accent-color);
+}
+
+h2 {
+    font-size: 0.8rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    padding: 0.3em;
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+}
+
+.location {
+    font-weight: 800;
+    font-size: 1.8rem;
+    line-height: 1.9rem;
+    margin-top: 0.5rem;
+}
+
+.distance {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 0.3rem;
+    color: var(--accent-color);
+}
+
+.profile {
+    margin-top: 0.5rem;
+}
+
+.stage-info {
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0.2rem;
+    color: var(--fg-color);
+    font-weight: 500;
+}
+
+.type {
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+    font-weight: 500;
+}
+
+footer {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 0.6rem;
+    margin-top: 1rem;
+}
+
+.tz {
+    font-size: 0.6rem;
+}
+
+#tz-info {
+    margin-bottom: 0.5rem;
+    font-size: 0.6rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.rest {
+    background-color: var(--bg-color);
+}
+
+@media screen and (min-width: calc(500px + 3rem)) {
+    :root {
+        font-size: 32px;
+    }
+
+    .stage-info {
+        font-size: 0.7rem;
+    }
+
+    .tz {
+        font-size: 0.5rem;
+    }
+
+}
